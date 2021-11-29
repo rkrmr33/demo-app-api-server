@@ -1,0 +1,30 @@
+{
+  "name": "demo-app-api-server",
+  "version": "1.0.0",
+  "description": "api-server",
+  "main": "./server/index.js",
+  "repository": "https://github.com/rkrmr33/demo-app-api-server.git",
+  "author": "rkrmr33 <roikramer120@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node server",
+    "start:dev": "nodemon server",
+    "clean": "rm -rf dist",
+    "pkg": "node ./hack/docker.build.js",
+    "push": "node ./hack/docker.push.js",
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.8",
+    "express-winston": "^4.2.0",
+    "node-fetch": "2",
+    "winston": "^3.3.3"
+  }
+}
