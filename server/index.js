@@ -28,6 +28,14 @@ app.use(expressWinston.logger({
 
 app.use('/api', api);
 
+app.get('/healthz', (req, res) => {
+    res.status(200).send('ok');
+});
+
+app.get('/readyz', (req, res) => {
+    res.status(200).send('ok');
+});
+
 app.use((err, req, res, next) => {
     res.status(500).send(err.message);
     next();
