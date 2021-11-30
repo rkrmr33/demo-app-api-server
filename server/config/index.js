@@ -10,9 +10,9 @@ const development = {
 
 const kubernetes = {
     services: {
-        svc1: 'http://svc1',
-        svc2: 'http://svc2',
-        svc3: 'http://svc3',
+        svc1: 'http://demo-app-svc1',
+        svc2: 'http://demo-app-svc2',
+        svc3: 'http://demo-app-svc3',
     },
 };
 
