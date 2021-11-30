@@ -1,6 +1,6 @@
 {
   "name": "demo-app-api-server",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "api-server",
   "main": "./server/index.js",
   "repository": "https://github.com/rkrmr33/demo-app-api-server.git",
